@@ -30,6 +30,10 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    compile ('io.socket:socket.io-client:0.8.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+
     testCompile 'junit:junit:4.12'
     compile 'junit:junit:4.12'  
     implementation 'androidx.appcompat:appcompat:1.0.2'
